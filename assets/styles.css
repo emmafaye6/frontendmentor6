@@ -1,9 +1,14 @@
 :root {
   /*FONT VARIABLES*/
   --poppins-font: "Poppins", sans-serif;
+
   --poppins-light: 200;
   --poppins-regular: 400;
-  --poppins-regular: 600;
+  --poppins-bold: 600;
+
+  --poppins-big: 1.5rem;
+  --poppins-medium: 1.35rem;
+  --poppins-small: 1rem;
 
   /* COLOR VARIABLES*/
   --color-red: hsl(0, 78%, 62%);
@@ -12,32 +17,108 @@
   --color-blue: hsl(212, 86%, 64%);
   --color-very-dark-blue: hsl(234, 12%, 34%);
   --color-grayish-blue: hsl(229, 6%, 66%);
-  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: var(--poppins-font);
+  font-size: var(--poppins-small);
+  font-weight: var(--poppins-light);
+  padding: 2rem;
+  line-height: 1rem;
+  background-color: var(--color-very-light-gray);
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-weight: var(--poppins-bold);
+  font-size: var(--poppins-big);
+  color: var(--color-very-dark-blue);
 }
 
 h2 {
+  font-size: var(--poppins-medium);
+  color: var(--color-very-dark-blue);
 }
 
-.bigitalic {
+.biglight {
+  font-size: var(--poppins-big);
+  font-weight: var(--poppins-light);
+}
+
+.header {
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+.headertext {
+  line-height: 1.4rem;
+  padding-top: 0.5rem;
 }
 
 .cardcontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-top: 2rem;
 }
 
 .card1 {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  height: 13rem;
+  padding: 1.1rem 2rem;
+  line-height: 1.5rem;
+  border-top: solid 0.3rem var(--color-cyan);
+  box-shadow: 0px 15px 15px -15px var(--color-very-dark-blue);
 }
 
 .card2 {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  height: 13rem;
+  padding: 1.1rem;
+  line-height: 1.5rem;
+  border-top: solid 0.3rem var(--color-red);
+  box-shadow: 0px 15px 15px -15px var(--color-very-dark-blue);
 }
 
 .card3 {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  height: 13rem;
+  padding: 1.1rem;
+  line-height: 1.5rem;
+  border-top: solid 0.3rem var(--color-orange);
+  box-shadow: 0px 15px 15px -15px var(--color-very-dark-blue);
 }
 
 .card4 {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  height: 13rem;
+  padding: 1.1rem;
+  line-height: 1.5rem;
+  border-top: solid 0.3rem var(--color-blue);
+  box-shadow: 0px 15px 15px -15px var(--color-very-dark-blue);
+}
+
+img {
+  margin-right: 0;
+}
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+
+/*DESKTOP MEDIA QUERY*/
+
+@media screen and (min-width: 760px) {
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -80,7 +161,6 @@ main {
  */
 
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
 }
 
